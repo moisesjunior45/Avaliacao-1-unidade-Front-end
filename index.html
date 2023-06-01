@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRTROPICAL FLORES</title>
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/Css/w3.css/w3.css">
     <link rel="stylesheet" type="text/css" href="assets/Css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/Css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/Css/responsividade.css">
     <link rel="shortcut icon" href="assets/Media/img/Flores/flor3.jpg" type="image/x-icon">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,11 +19,13 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <header class="menu">
         <div class="menu-content main-content">
-            <h1><a href="index.html">BRTROPICAL FLORES</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="index.html">BRTROPICAL FLORES</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#produtos">Produtos</a></li>
@@ -34,7 +38,7 @@
         </div>
     </header>
 
-    <section id="" class="section bg-green">
+    <section class="section bg-green">
 
         <div class="main-content">
             <h2>BRTROPICAL FLORES</h2>
