@@ -60,14 +60,14 @@
 
 /* Inicio Seção home */
 #home {
-	margin-top:50px;
+	margin-top: 50px;
 	padding: 0;
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 }
 
 .slider {
@@ -337,26 +337,113 @@ input[type=number] {
 
 /* Inicio footer */
 
+.container {
+	max-width: 1170px;
+	margin: auto;
+	line-height: 1.5;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+ul {
+	list-style: none;
+}
+
 .footer {
-	text-align: center;
+	padding: 7rem 0;
+
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 1.5rem;
+}
+
+.footer-col img {
+	width: 50%;
+	height: auto;
+	margin-top: -2rem;
+	transition: opacity 0.3s ease;	
+}
+
+.footer-col img:hover {
+	opacity: 0.8;
+}
+
+.footer-col h4 {
+	font-size: 1.8rem;
+	color: #000;
+	text-transform: capitalize;
+	margin-bottom: 3.5rem;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1rem;
+	background-color: #6F9147;
+	height: .2rem;
+	box-sizing: border-box;
+	width: 5rem;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 1rem;
+	
+}
+
+.footer-col ul li a {
 	font-size: 1.6rem;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #000;
+	display: block;
+	transition: all 0.3s ease;
 }
 
-.footer a {
-	color: var(--primary-color);
-	transition: all 300ms ease-in-out;
+.footer-col ul li a:hover {
+	color: #bbb;
+	padding-left: .8rem;
 }
 
-.footer a:hover {
-	font-size: 2rem;
-	color: var(--primary-color);
-	font-weight: bold;
+.footer-col .social-links a {
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	background-color: #0c0707;
+	margin: 0 1rem 1rem 0;
+	text-align: center;
+	line-height: 4rem;
+	border-radius: 50%;
+	color: #fff;
+	transition: all 0.5s ease;
 }
 
-.footer p {
-	margin: 0;
-	padding: 3rem;
+.footer-col .social-links a:hover {
+	color: #000;
+	background-color: #fff;
 }
+
+/*responsive*/
+@media(max-width: 767px){
+	.footer-col{
+	  width: 50%;
+	  margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+	.footer-col{
+	  width: 100%;
+  }
+  }
 
 /* Fim footer */
 
@@ -372,7 +459,8 @@ input[type=number] {
 		height: 100%;
 	}
 
-	.manual-navigation, .navigation-auto {
+	.manual-navigation,
+	.navigation-auto {
 		width: 80%;
 	}
 }
