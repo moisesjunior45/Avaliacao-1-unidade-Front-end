@@ -32,13 +32,16 @@
         cursor: pointer;
     }
 
-    /* × */
     .close-menu:checked~.menu {
         display: block;
     }
 
     .close-menu:checked~.close-menu-label::after {
         content: '×';
+    }
+
+    .intro-content, .main-content {
+        grid-template-columns: 1fr;
     }
 
 
