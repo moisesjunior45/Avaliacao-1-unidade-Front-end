@@ -1,75 +1,123 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 40px;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+body,
+.message,
+.form,
 form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 5px;
-    border: 20px solid #6F9147;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-}
-.left-col {
-flex: 1;
-padding-right: 20px;
-text-align: center;
-}
-h2 {
-margin-top: 0;
-margin-bottom: 20px;
-}
-input[type=text], input[type=password] {
-padding: 10px;
-margin: 10px 0;
-border-radius: 20px;
-border: none;
-border:1px solid #000000;
-height: 60%;
-width: 50%;
-box-sizing: border-box;
-font-size: 7px;
-}
-input[type="submit"] {
-    background-color: #DA9027;
-    color: white;
-    font-weight: bold;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 50%;
-}
-.right-col {
-    flex: 1;
-    text-align: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2eee3;
 }
 
-.right-col img {
-    width: 50%;
-    height: 60%;
-    margin-right: 100px;
-    border-radius: 5%;
+body {
+  height: 100vh;
+  background: #e8e8e8;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
 }
 
-input[type=text], input[type=email]{
-    background-color:#ffffff;
-    height:20%;
-    width:50%;
-    border-radius:20px;
-    border:1px solid #000000;
-    box-sizing: border-box;
-    font-size: 7px;
+.container {
+  width: 700px;
+  height: 400px;
+  background: #9cda74;
+  position: relative;
+  display: grid;
+  grid-template: 100%/50% 50%;
+  box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.2);
+}
+
+.message {
+  position: absolute;
+  background-color: #f2eee3;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: translateX(100%);
+  z-index: 4;
+}
+.message:before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70%;
+  background: #c3c3d8;
+  opacity: 0;
+  left: 0;
+  top: 15%;
+}
+.message .button {
+  margin: 5px;
+}
+
+.signup:before {
+  opacity: 0.3;
+  left: 0;
+}
+
+.login:before {
+  opacity: 0.3;
+  left: 100%;
+}
+
+.btn-wrapper {
+  width: 60%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+.form--heading {
+  font-size: 25px;
+  height: 50px;
+  color: #4dfa4d;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.form--signup {
+  border-right: 1px solid #999;
+}
+
+form {
+  width: 70%;
+}
+form > * {
+  margin: 10px;
+}
+form input {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  font-size: 13px;
+  font-weight: 300;
+  color: #797a9e;
+  letter-spacing: 0.11em;
+  background-color: #f2eee3;
+}
+form input::placeholder {
+  color: #333;
+  font-size: 10px;
+}
+form input:focus {
+  outline: 0;
+  border-bottom: 1px solid rgba(128, 155, 206, 0.7);
+  transition: 0.6s all ease;
+}
+
+.button {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  color: #f2eee3;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  z-index: 3;
+  background: #67db67;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
 }
