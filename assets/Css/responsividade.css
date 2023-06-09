@@ -1,4 +1,6 @@
 @media screen and (max-width: 900px) {
+
+    /* Menu */
     .menu {
         bottom: 0;
         text-align: center;
@@ -40,12 +42,12 @@
         content: '×';
     }
 
+    /* Sobre */
+
     .intro-content, .main-content {
         grid-template-columns: 1fr;
     }
-
-
-
+    
     /* Slide */
 	.slider {
 		width: 100%;
