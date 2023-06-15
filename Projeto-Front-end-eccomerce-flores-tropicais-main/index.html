@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRTROPICAL FLORES</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/Css/w3.css/w3.css">
+    <link rel="stylesheet" type="text/css" href="assets/Css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/Css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/Css/responsividade.css">
+    <link rel="shortcut icon" href="assets/Media/img/Flores/flor3.jpg" type="image/x-icon">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <header class="menu">
+        <div class="menu-content main-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="index.html">BRTROPICAL FLORES</a></h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="assets/html/login.html" target="_blank"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="section bg-green">
+
+        <div class="main-content">
+            <h2>BRTROPICAL FLORES</h2>
+            <p>Bem-vindo à nossa incrível seção de flores tropicais! Explore a exuberância e a beleza da natureza com
+                nosso deslumbrante slider de flores tropicais. Deixe-se envolver pelas cores vibrantes, formas exóticas
+                e fragrâncias irresistíveis que essas flores únicas têm a oferecer.</p>
+
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="assets/Media/img/Flores/flor2.jpg" alt="Imagem de uma for" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Media/img/Flores/flor7.jpg" alt="Imagem de uma for" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Media/img/Flores/flor3.jpg" alt="Imagem de uma for" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/Media/img/Flores/flor6.jpg" alt="Imagem de uma for" />
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section ">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>Sobre Nós</h2>
+                <p>Localizada na Granja Nossa Senhora da Conceição, s/n - Vivência, kM 50.
+                    Goiana – PE, na estrada que leva as praias de Carne de Vaca e Ponta de Pedras. A Brtropical
+                    Flores foi criada em 2005, sendo a mais nova e moderna empresa entre as visitadas de
+                    produção e comercialização de flores, folhagens e plantas tropicais. Representa um grupo de
+                    produtores pernambucanos dedicados e experientes em manejo e comercialização de flores.
+                    A empresa iniciou seu projeto para construção do seu site no mesmo ano de
+                    fundação. Naquela época realizou uma pesquisa, analisando os sites existentes e verificou que
+                    a maioria das páginas virtuais era estática, sem muita informação ou interatividade com o
+                    cliente o que as tornavam pouco atrativas. Então, a empresa iniciou a construção do site,
+                    procurando acrescentar movimentos, fotos de arranjos, flores e eventos colocando cores
+                    vibrantes para relacioná-las a alegria das flores tropicais como produto.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/Media/img/Flores/flor1.jpg" alt="Flor tropical branca">
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section bg-green">
+        <div class="main-content grid-content">
+            <h2 class="grid-main-heading">Galeria</h2>
+            <p class="grid-description">Uma flor diferente para tornar cada momento da sua vida especial, espécies
+                exóticas em arranjos
+                diferenciados e exclusivos, conheça um pouco mais sobre a cooperativa e o trabalho que desenvolvemos.
+            </p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="assets/Media/img/Flores/flor2.jpg" class="w3-round w3-padding"
+                        alt="Imagem da primeira flor">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/Media/img/Flores/flor3.jpg" class="w3-round w3-padding "
+                        alt="Imagem da segunda flor">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/Media/img/Flores/flor4.jpg" class="w3-round w3-padding"
+                        alt="Imagem da terceira flor">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/Media/img/Flores/flor5.jpg" class="w3-round w3-padding"
+                        alt="Imagem da quarta flor">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/Media/img/Flores/flor6.jpg" class="w3-round w3-padding "
+                        alt="Imagem da quinta flor">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/Media/img/Flores/flor7.jpg" class="w3-round w3-padding" alt="Imagem da sexta flor">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="produtos" class="section">
+        <div class="main-content">
+            <h2>Produtos</h2>
+            <p>Flores são sempre mensageiras de boas energias, o que fazemos é transformar essas jóias da natureza em
+                arranjos cheios de sofisticação e com uma assinatura única, moderna, recheada de referências nas artes e
+                no design.</p>
+            
+            <div class="w3-row">
+                <div class="w3-col s4 w3-white w3-center">
+                    <img src="assets/Media/img/produtos/Flor-Ave-do-paraiso.jpg" alt="imagem da flor ave do paraiso"
+                        style="height: 250px; width: 100%;">
+                    <p>Ave do paraiso</p>
+                    <p>R$ 39.99</p>
+                </div>
+                <div class="w3-col s4 w3-white w3-center">
+                    <img src="assets/Media/img/produtos/gengibre ornamentais.jpg" alt="imagem da flor ave do paraiso"
+                        style="height: 250px; width: 100%; margin-left: 5px;">
+                    <p>Gengibre ornamentais</p>
+                    <p>R$ 29.99</p>
+                </div>
+                <div class="w3-col s4 w3-white w3-center">
+                    <img src="assets/Media/img/produtos/cana indica.jpg" alt="imagem da flor ave do paraiso"
+                        style="height: 250px; width: 100%; margin-left: 5px;">
+                    <p>Cana indica</p>
+                    <p>R$ 19.99</p>
+                </div>
+
+            </div>
+        </div>
+        <button class="button-products" type="button"><a href="#">Visualizar mais produtos</a></button>
+        </div>
+    </section>
+
+    <section id="contato" class=" section bg-green">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>Contato</h2>
+                <p>Informações ou sugestões, preencha o formulário a seguir.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/Media/img/icones/contact-us.svg" alt="imagem demonstrando várias formas de contato">
+            </div>
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Entre em Contato </legend>
+
+                    <div class="form-group">
+                        <label for="first-name">Nome</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Telefone</label>
+                        <input type="number" name="last-name" id="last-name" placeholder="(11) 99999-9999">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu E-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+
+                </fieldset>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Outros serviços</a></li>
+                        <li><a href="#">Politicas de privacidade</a></li>
+                        <li><a href="#">Programas de afiliação</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="">Perguntas frequentes</a></li>
+                        <li><a href="">Status do pedido</a></li>
+                        <li><a href="">Opções de pagamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Fale conosco</h4>
+                    <a href="#"><img src="assets/Media/img/Mascote/Mascote2.png" alt=""></a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/Js/carrousel.js"></script>
+</body>
+
+</html>

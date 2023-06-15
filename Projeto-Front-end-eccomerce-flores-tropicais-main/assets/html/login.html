@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Cadastro</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Css/reset.css">
+  <link rel="stylesheet" href="../Css/styles.css">
+  <link rel="stylesheet" href="../Css/responsividade.css">
+  <link rel="stylesheet" href="../Css/login.css">
+  <link rel="shortcut icon" href="https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur.png"
+    type="image/x-icon">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="message signup">
+      <div class="btn-wrapper">
+        <button class="button" id="signup">Criar conta</button>
+        <button class="button" id="login"> Login</button>
+      </div>
+    </div>
+    <div class="form form--signup">
+      <div class="form--heading">Bem vindo! Cadastre-se</div>
+      <form autocomplete="off">
+        <input type="text" required placeholder="Nome">
+        <input type="email" required placeholder="Email">
+        <input type="password" required placeholder="Senha">
+        <input type="password" required placeholder="Confirmar Senha">
+        <button class="button">Criar conta</button>
+
+        <p>Cadastre-se usando as seguintes redes:</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </form>
+    </div>
+    <div class="form form--login">
+      <div class="form--heading">Bem vindo de volta!</div>
+      <form autocomplete="off">
+        <input type="email" required placeholder="E-mail">
+        <input type="password" required placeholder="Password">
+        <button class="button">Login</button>
+        <p>Conecte-se usando as seguintes redes:</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="../Js/login.js"></script>
+
+</body>
+
+</html>
