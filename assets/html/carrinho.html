@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - BRTROPICAL FLORES</title>
+    <link rel="stylesheet" href="../Css/carinho.css">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/responsividade.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="main-content">
+            <h2>BRTROPICAL FLORES</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- itens do carrinho serão inseridos aqui -->
+                </tbody>
+            </table><br>
+            <div class="shipping-calculator">
+                <h3>Calculadora de Frete</h3>
+                <input type="text" placeholder="CEP" oninput="validarCEP(); formatarCEP();">
+                <button onclick="calcularFrete()">Calcular</button>
+                <p class="frete"></p>
+            </div>
+            <div class="cart-actions">
+                <h3>Total do Carrinho: R$ <span id="total">0,00</span></h3>
+                <button onclick="finalizarCompra()" id="finalizarCompraBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../Js/carrinho.js"></script>
+</body>
+
+</html>
