@@ -488,51 +488,90 @@ ul {
   }
 
 /* Fim footer */
-button {
-  background-color: #4CAF50; /* cor de fundo */
-  border: none; /* remove a borda */
-  color: white; /* cor do texto */
-  padding: 8px 8px; /* espaço interno */
-  text-align: center; /* alinhamento do texto */
-  text-decoration: none; /* remove sublinhado */
-  display: inline-block; /* exibe o botão como um bloco */
-  font-size: 16px; /* tamanho da fonte */
-  margin: auto; /* margem */
-  cursor: pointer; /* cursor de mão ao passar o mouse */
-}
-
-button:hover {
-  background-color: #3e8e41; /* cor de fundo ao passar o mouse */
-}
-
-#diminuir {
-  background-color: #f44336; /* cor de fundo do botão "diminuir" */
-}
-
-#diminuir:hover {
-  background-color:#0c0707; /* cor de fundo do botão "diminuir" ao passar o mouse */
-}
-
-.material-icons {
-  vertical-align: middle; /* alinhamento vertical do ícone */
-}
 body {
-    background-color: #fff;
-    color: #333;
+	background-color: #fff;
+	color: #333;
+  }
+  
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
   }
   
   button {
-    background-color: #007bff;
-    color: #fff;
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 8px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: auto;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #3e8e41;
+  }
+  
+  #increase-font-size {
+	background-color: black;
+	color: white;
+  }
+  
+  #increase-font-size:hover {
+	background-color: #3e8e41;
+  }
+  
+  #decrease-font-size {
+	background-color: black;
+	color: white;
+  }
+  
+  #decrease-font-size:hover {
+	background-color: #3e8e41;
+  }
+  
+  .material-icons {
+	vertical-align: middle;
   }
   
   .dark-mode {
-    background-color: #333;
-    color: #fff;
+	background-color: #333;
+	color: #fff;
   }
   
   .dark-mode button {
-    background-color: #fff;
-    color: #333;
+	background-color: #fff;
+	color: #333;
+	font-size: 16px;
+  }
+  
+  .dark-mode button#increase-font-size,
+  .dark-mode button#decrease-font-size {
+	font-size: 14px;
+  }
+  
+  .dark-mode #increase-font-size:hover {
+	background-color: #3e8e41;
+  }
+  
+  .dark-mode #decrease-font-size {
+	background-color: #fff;
+	color: #333;
+  }
+  
+  .dark-mode #decrease-font-size:hover {
+	background-color: #3e8e41;
+	color: #fff;
+  }
+  .material-icons {
+	vertical-align: middle;
+  }
+  .dark-mode button .material-icons {
+	font-size: 18px;
   }
   
