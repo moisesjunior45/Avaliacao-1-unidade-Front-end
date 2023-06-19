@@ -1,48 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras - BRTROPICAL FLORES</title>
-    <link rel="stylesheet" href="../Css/carinho.css">
-    <link rel="stylesheet" href="../Css/reset.css">
-    <link rel="stylesheet" href="../Css/styles.css">
-    <link rel="stylesheet" href="../Css/responsividade.css">
+    <link rel="stylesheet" href="../Css/carrinho.css">
+    <link rel="stylesheet" type="text/css" href="../Css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../Css/responsividade.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
-    <section class="section">
-        <div class="main-content">
-            <h2>BRTROPICAL FLORES</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Preço</th>
-                        <th>Quantidade</th>
-                        <th>Total</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- itens do carrinho serão inseridos aqui -->
-                </tbody>
-            </table><br>
-            <div class="shipping-calculator">
-                <h3>Calculadora de Frete</h3>
-                <input type="text" placeholder="CEP" oninput="validarCEP(); formatarCEP();">
-                <button onclick="calcularFrete()">Calcular</button>
-                <p class="frete"></p>
-            </div>
-            <div class="cart-actions">
-                <h3>Total do Carrinho: R$ <span id="total">0,00</span></h3>
-                <button onclick="finalizarCompra()" id="finalizarCompraBtn">Finalizar Compra</button>
+
+    <div class="models">
+        <div class="models-item">
+            <a href="">
+                <div class="models-item--img"><img src="" /></div>
+                <div class="models-item--add">+</div>
+            </a>
+            <div class="models-item--price">R$ --</div>
+            <div class="models-item--name">--</div>
+            <div class="models-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
             </div>
         </div>
-    </section>
+    </div>
+    <header>
+        <div class="menu-openner">
+            <span>0</span>
+            <span class="material-icons"><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+    </header>
+    <main>
+        <h1>Produtos</h1>
+        <div class="models-area"></div>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">
+                <span class="material-icons"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <h1>Seus Produtos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <div class="modelsWindowArea">
+        <div class="modelsWindowBody">
+            <!-- 
+                  Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+                  da janela modal vai ser igual, logo vamos fazer uma função
+              -->
+            <div class="modelsInfo--cancelMobileButton">Voltar</div>
+            <div class="modelsBig">
+                <img src="" />
+            </div>
+            <div class="modelsInfo">
+                <h1>--</h1>
+                <div class="modelsInfo--desc">--</div>
+                <div class="modelsInfo--sizearea">
+                    <div class="modelsInfo--sector">Escala</div>
+                    <div class="modelsInfo--sizes">
+                        <div data-key="0" class="modelsInfo--size">Pequeno <span>--</span></div>
+                        <div data-key="1" class="modelsInfo--size">Médio <span>--</span></div>
+                        <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                    </div>
+                </div>
+                <div class="modelsInfo--pricearea">
+                    <div class="modelsInfo--sector">Preço</div>
+                    <div class="modelsInfo--price">
+                        <div class="modelsInfo--actualPrice">R$ --</div>
+                        <div class="modelsInfo--qtarea">
+                            <button class="modelsInfo--qtmenos">-</button>
+                            <div class="modelsInfo--qt">1</div>
+                            <button class="modelsInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                <div class="modelsInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
 
-    <script src="../Js/carrinho.js"></script>
+    <script type="text/javascript" src="../Js/carrinho.js"></script>
 </body>
 
 </html>

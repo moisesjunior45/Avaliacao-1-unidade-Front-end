@@ -46,7 +46,7 @@
 
         <div class="main-content">
             <h2>BRTROPICAL FLORES</h2>
-            <p id="textocompl">Bem-vindo à nossa incrível seção de flores tropicais! Explore a exuberância e a beleza da natureza com
+            <p class="textocompl">Bem-vindo à nossa incrível seção de flores tropicais! Explore a exuberância e a beleza da natureza com
                 nosso deslumbrante slider de flores tropicais. Deixe-se envolver pelas cores vibrantes, formas exóticas
                 e fragrâncias irresistíveis que essas flores únicas têm a oferecer.</p>
 
@@ -274,12 +274,12 @@
        
             document.getElementById("aumentar").addEventListener("click", function(){
             tamanhoFonte += 2;
-            document.getElementById("textocompl").style.fontSize = tamanhoFonte + "px";
+            document.querySelector(".textocompl").style.fontSize = tamanhoFonte + "px";
          });
 
             document.getElementById("diminuir").addEventListener("click", function(){
             tamanhoFonte -= 2;
-            document.getElementById("textocompl").style.fontSize = tamanhoFonte + "px";
+            document.querySelector(".textocompl").style.fontSize = tamanhoFonte + "px";
          });
      </script>
 </body>
