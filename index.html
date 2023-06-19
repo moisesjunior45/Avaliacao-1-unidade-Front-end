@@ -36,6 +36,7 @@
                     <li><a href="assets/html/login.html" target="_blank"><i class="fa-solid fa-user"></i></a></li>
                     <button id="aumentar"><i class="material-icons">A+</i></button>
                     <button id="diminuir"><i class="material-icons">A-</i></button>
+                    <button id="dark-mode-btn">Escuro</button>
                 </ul>
 
             </nav>
@@ -282,6 +283,20 @@
             document.querySelector(".textocompl").style.fontSize = tamanhoFonte + "px";
          });
      </script>
+
+<script>
+    const btn = document.getElementById('dark-mode-btn');
+    const body = document.body;
+
+   btn.addEventListener('click', function () {
+   body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+    btn.textContent = 'Light mode';
+    } else {
+    btn.textContent = 'Dark mode';
+   }
+});
+ </script>
 </body>
 
 </html>
