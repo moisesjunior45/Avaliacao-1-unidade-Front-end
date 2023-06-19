@@ -14,11 +14,13 @@
     <link rel="shortcut icon" href="assets/Media/img/Flores/flor3.jpg" type="image/x-icon">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 
 
 </head>
 
 <body>
+    
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <header class="menu">
@@ -32,6 +34,8 @@
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="assets/html/login.html" target="_blank"><i class="fa-solid fa-user"></i></a></li>
+                    <button id="aumentar"><i class="material-icons">A+</i></button>
+                    <button id="diminuir"><i class="material-icons">A-</i></button>
                 </ul>
 
             </nav>
@@ -42,7 +46,7 @@
 
         <div class="main-content">
             <h2>BRTROPICAL FLORES</h2>
-            <p>Bem-vindo à nossa incrível seção de flores tropicais! Explore a exuberância e a beleza da natureza com
+            <p id="textocompl">Bem-vindo à nossa incrível seção de flores tropicais! Explore a exuberância e a beleza da natureza com
                 nosso deslumbrante slider de flores tropicais. Deixe-se envolver pelas cores vibrantes, formas exóticas
                 e fragrâncias irresistíveis que essas flores únicas têm a oferecer.</p>
 
@@ -265,6 +269,19 @@
 
 
     <script src="assets/Js/carrousel.js"></script>
+     <script>
+          var tamanhoFonte = 16;
+       
+            document.getElementById("aumentar").addEventListener("click", function(){
+            tamanhoFonte += 2;
+            document.getElementById("textocompl").style.fontSize = tamanhoFonte + "px";
+         });
+
+            document.getElementById("diminuir").addEventListener("click", function(){
+            tamanhoFonte -= 2;
+            document.getElementById("textocompl").style.fontSize = tamanhoFonte + "px";
+         });
+     </script>
 </body>
 
 </html>

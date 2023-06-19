@@ -477,3 +477,31 @@ ul {
 }
 
 /* Fim footer */
+button {
+  background-color: #4CAF50; /* cor de fundo */
+  border: none; /* remove a borda */
+  color: white; /* cor do texto */
+  padding: 8px 8px; /* espaço interno */
+  text-align: center; /* alinhamento do texto */
+  text-decoration: none; /* remove sublinhado */
+  display: inline-block; /* exibe o botão como um bloco */
+  font-size: 16px; /* tamanho da fonte */
+  margin: auto; /* margem */
+  cursor: pointer; /* cursor de mão ao passar o mouse */
+}
+
+button:hover {
+  background-color: #3e8e41; /* cor de fundo ao passar o mouse */
+}
+
+#diminuir {
+  background-color: #f44336; /* cor de fundo do botão "diminuir" */
+}
+
+#diminuir:hover {
+  background-color:#0c0707; /* cor de fundo do botão "diminuir" ao passar o mouse */
+}
+
+.material-icons {
+  vertical-align: middle; /* alinhamento vertical do ícone */
+}
