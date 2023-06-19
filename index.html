@@ -284,19 +284,21 @@
          });
      </script>
 
-<script>
-    const btn = document.getElementById('dark-mode-btn');
-    const body = document.body;
+       <script>
+         const btn = document.getElementById('dark-mode-btn');
+         const body = document.body;
 
-   btn.addEventListener('click', function () {
-   body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode')) {
-    btn.textContent = 'Light mode';
-    } else {
-    btn.textContent = 'Dark mode';
-   }
-});
- </script>
+         btn.addEventListener('click', function () {
+         body.classList.toggle('dark-mode');
+         if (body.classList.contains('dark-mode')) {
+         btn.textContent = 'claro';
+         } else {
+         btn.textContent = 'escuro';
+         }
+       });
+      </script>
+        <footer  id="final">
+          <p>&copy; 2023 - GMC-Tecnologia</p>
+        </footer>
 </body>
-
 </html>
